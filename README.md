@@ -67,3 +67,42 @@ The server will start on port 3000. You can access the API endpoints at `http://
     "price": 1.5,
     "inventory": 100
   }
+View Existing Grocery Items
+Method: GET
+URL: /admin/view
+Remove Grocery Item
+Method: DELETE
+URL: /admin/remove/:id
+Replace :id with the actual ID of the grocery item you want to remove.
+Update Grocery Item
+Method: PUT
+URL: /admin/update/:id
+Replace :id with the actual ID of the grocery item you want to update.
+Body: (JSON)
+{
+  "name": "Banana",
+  "price": 0.5,
+  "inventory": 150
+}
+Manage Inventory
+Method: PUT
+URL: /admin/inventory
+Body: (JSON)
+{
+  "id": "groceryItemId",
+  "inventory": 200
+}
+User Endpoints
+View Available Grocery Items
+Method: GET
+URL: /user/view
+Book Multiple Grocery Items
+Method: POST
+URL: /user/book
+Body: (JSON)
+{
+  "items": [
+  { "id": "groceryItemId1", "quantity": 2 },
+    { "id": "groceryItemId2", "quantity": 3 }
+  ]
+}
