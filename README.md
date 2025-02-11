@@ -20,7 +20,7 @@ This is a fullstack Node.js application for managing grocery items. It includes 
 - Express
 - MongoDB
 - Mongoose
-- Docker (optional)
+
 
 ## Getting Started
 
