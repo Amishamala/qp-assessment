@@ -1,0 +1,13 @@
+{
+    "name": "fullstack-node-app",
+    "version": "1.0.0",
+    "description": "A fullstack Node.js application for managing grocery items",
+    "main": "src/app.js",
+    "scripts": {
+      "start": "node src/app.js"
+    },
+    "dependencies": {
+      "express": "^4.21.2",
+      "mongoose": "^5.12.3"
+    }
+  }
